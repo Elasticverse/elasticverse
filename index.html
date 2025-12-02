@@ -1,247 +1,465 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elasticverse – Observability & Search MSP</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header with navigation -->
-    <header class="header">
-        <div class="container header-container">
-            <div class="logo">
-                <img src="./assets/Elasticverse-logo.png" alt="Elasticverse Logo" style="height:70px; vertical-align:middle; margin-right:20px;" link="index.html">
-            </div>
-
-            <nav class="nav">
-                <a href="#mission">Mission</a>
-                <a href="#trends">Trends</a>
-                <a href="#services">Services</a>
-                <a href="#packages">Packages</a>
-                <a href="#contact">Contact</a>
-            </nav>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elasticverse – Observability & Search MSP for GenAI‑native Stacks</title>
+    <meta
+      name="description"
+      content="Elasticverse is the observability & search MSP for GenAI‑native stacks. Elastic‑native managed services for observability, DevOps, AI search and cloud platforms."
+    />
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom gradients and glassmorphism touches for a sleek, futuristic feel */
+      .hf-gradient {
+        background: radial-gradient(circle at top right, rgba(99,102,241,0.18), transparent 55%),
+                    radial-gradient(circle at bottom left, rgba(139,92,246,0.18), transparent 55%);
+      }
+      .hf-card {
+        background: rgba(23,37,84,0.85);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+  </head>
+  <body class="bg-slate-900 text-slate-50 hf-gradient">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-900/90 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:py-4">
+        <div class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-sky-500 to-violet-500 text-xl font-bold">
+            Ev
+          </div>
+          <div class="leading-tight">
+            <div class="text-lg font-semibold">Elasticverse</div>
+            <div class="text-xs text-slate-400">Observability & Search MSP</div>
+          </div>
         </div>
+        <nav class="hidden gap-6 text-sm text-slate-300 lg:flex">
+          <a href="#why" class="hover:text-sky-300">Why Elasticverse</a>
+          <a href="#services" class="hover:text-sky-300">Services</a>
+          <a href="#packages" class="hover:text-sky-300">Packages</a>
+          <a href="#sla" class="hover:text-sky-300">SLAs</a>
+          <a href="#contact" class="hover:text-sky-300">Contact</a>
+        </nav>
+        <a
+          href="#contact"
+          class="hidden rounded-full bg-sky-500 px-5 py-2 text-sm font-semibold text-slate-900 shadow-md shadow-sky-600/40 hover:bg-sky-400 lg:inline-block"
+        >
+          Book a discovery call
+        </a>
+      </div>
     </header>
 
-    <!-- Hero section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>Elasticverse</h1>
-            <p class="tagline">The observability &amp; search MSP for GenAI‑native stacks</p>
-            <div class="cta-buttons">
-                <a href="#services" class="btn primary">Explore Services</a>
-                <a href="#contact" class="btn secondary">Get a Free Assessment</a>
-            </div>
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+      <!-- floating gradient blobs -->
+      <div class="pointer-events-none absolute inset-0 opacity-40">
+        <div class="absolute -top-32 -left-16 h-80 w-80 rounded-full bg-sky-500/20 blur-2xl"></div>
+        <div class="absolute -bottom-32 right-0 h-80 w-80 rounded-full bg-violet-500/20 blur-2xl"></div>
+      </div>
+      <div class="mx-auto flex max-w-7xl flex-col gap-10 px-4 pb-16 pt-10 lg:flex-row lg:items-center lg:pb-24 lg:pt-20">
+        <div class="relative z-10 lg:w-3/5">
+          <span class="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-slate-800/70 px-3 py-1 text-xs font-medium text-sky-200">
+            <span class="h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+            The observability & search MSP for GenAI‑native stacks
+          </span>
+          <h1 class="mt-6 text-4xl font-extrabold tracking-tight text-slate-50 sm:text-5xl">
+            Make your AI stack <span class="text-transparent bg-gradient-to-r from-sky-400 to-violet-500 bg-clip-text">observable</span>
+          </h1>
+          <p class="mt-4 max-w-xl text-sm text-slate-300 sm:text-base">
+            Elasticverse helps AI-driven companies and digital platforms scale and secure their
+            infrastructure, observability and vector search systems with expert-managed services built on Elastic and cloud-native technologies.
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-4">
+            <a
+              href="#contact"
+              class="rounded-full bg-sky-500 px-6 py-2.5 text-sm font-semibold text-slate-900 shadow-lg shadow-sky-600/30 hover:bg-sky-400"
+            >
+              Talk to a Elasticverse architect
+            </a>
+            <a
+              href="#packages"
+              class="rounded-full border border-slate-700 px-5 py-2 text-sm font-medium text-slate-200 hover:border-sky-400/70 hover:text-sky-300"
+            >
+              View service packages
+            </a>
+          </div>
+          <div class="mt-6 text-xs text-slate-400">
+            🔍 Elastic‑native observability & vector search · ☁️ AWS / Azure / GCP · K8s · Terraform · GitOps
+          </div>
         </div>
-    </section>
-
-    <!-- Mission & About section -->
-    <section id="mission" class="section mission">
-        <div class="container" >
-            <h2>Our Mission</h2>
-            <p>Elasticverse unlocks the full potential of data, infrastructure and AI observability through managed services built on Elastic, cloud platforms, DevOps and GenAI technologies. We sit at the intersection of observability, infrastructure and AI adoption — pillars of modern tech stacks.</p>
-            <div class="two-columns">
-                <div>
-                    <h3>Brand One‑Liner</h3>
-                    <p style="text-align:justify" >Elasticverse helps companies scale and secure their infrastructure, observability and AI search systems — with expert‑managed services built on Elastic and cloud‑native technologies.</p>
-                </div>
-                <div>
-                    <h3>Positioning Statement</h3>
-                    <p style="text-align:justify">For AI‑driven companies and digital platforms who struggle with managing observability, vector search and DevOps complexity, Elasticverse offers a turnkey MSP solution that integrates best‑in‑class Elastic, cloud and GenAI tooling — enabling faster recovery, deeper insights and scalable infrastructure.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Market Trends section -->
-    <section id="trends" class="section trends">
-        <div class="container">
-            <h2>Market Trends</h2>
-            <div class="grid four">
-                <div class="trend-item">
-                    <h4>AI Adoption &amp; Data Growth</h4>
-                    <p>AI/LLM systems require logs, metrics, traces and embeddings to run reliably, creating explosive data growth and new observability complexity.</p>
-                </div>
-                <div class="trend-item">
-                    <h4>Vector Search &amp; RAG Implementation</h4>
-                    <p>Elastic’s move into vector search, RAG and GenAI integration is a goldmine. Many companies want AI‑powered search but lack expertise.</p>
-                </div>
-                <div class="trend-item">
-                    <h4>DevOps &amp; Talent Shortage</h4>
-                    <p>Hiring and retaining skilled engineers to run complex infrastructure is hard. Organizations are turning to trusted MSPs to own the platform for them.</p>
-                </div>
-                <div class="trend-item">
-                    <h4>Observability as Priority</h4>
-                    <p>Incidents cost millions. Full‑stack monitoring and insights are no longer optional, they are critical to saving money and protecting brand trust.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Differentiators section -->
-    <section class="section diffs">
-        <div class="container">
-            <h2>What Makes Us Different</h2>
-            <ul class="diff-list">
-                <li><strong>Elastic‑native observability &amp; AI tracing:</strong> We specialize in Elastic stack, vector search and AI pipelines, unlike general MSPs who lack search and AI expertise.</li>
-                <li><strong>SLAs for AI reliability:</strong> Our service covers RAG pipelines, embeddings and vector infrastructure, not just app‑level monitoring.</li>
-                <li><strong>Deep Elastic &amp; DevOps integration:</strong> We integrate Elastic with your DevOps and cloud platforms to manage cost and scaling.</li>
-                <li><strong>Platform engineering mindset:</strong> We build resilient, self‑service platforms instead of simply keeping the lights on.</li>
+        <!-- Highlight card -->
+        <div class="relative z-10 mt-8 lg:mt-0 lg:w-2/5">
+          <div class="hf-card rounded-3xl border border-slate-800 p-6 shadow-xl shadow-violet-500/20">
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-sky-300">At a glance</p>
+            <ul class="mt-4 space-y-3 text-sm text-slate-200">
+              <li class="flex gap-3">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+                <span>Elastic, observability & GenAI infrastructure managed for you.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+                <span>SLAs for AI reliability, RAG pipelines & vector search performance.</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 h-1.5 w-1.5 rounded-full bg-sky-400"></span>
+                <span>Platform engineering mindset — beyond just keeping the lights on.</span>
+              </li>
             </ul>
-        </div>
-    </section>
-
-    <!-- Services section -->
-    <section id="services" class="section services">
-        <div class="container">
-            <h2>Service Pillars</h2>
-            <div class="grid two">
-                <div class="service-card">
-                    <h3>Elastic Stack as a Service</h3>
-                    <p>Managed Elasticsearch, Kibana, Beats &amp; Logstash; observability setup; dashboarding, alerting &amp; APM; index lifecycle management, snapshots &amp; tiering; scaling and cost optimization on Elastic Cloud, Kubernetes or on‑prem.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Observability &amp; APM</h3>
-                    <p>Managed observability across apps, services &amp; infrastructure. Instrumentation for logs, metrics &amp; traces (OpenTelemetry, Elastic APM); SLO/SLI setup; distributed tracing &amp; performance tuning.</p>
-                </div>
-                <div class="service-card">
-                    <h3>GenAI &amp; Vector Search</h3>
-                    <p>Set up and scale vector search with Elasticsearch; integrate embedding models, similarity search &amp; hybrid retrieval; architect GenAI‑ready search systems such as RAG pipelines for AI assistants.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Infrastructure &amp; DevOps</h3>
-                    <p>Infrastructure as code (Terraform, Ansible) for scalable clouds; managed Kubernetes (EKS, AKS, GKE) and Elastic integrations; CI/CD pipelines (GitLab, GitHub, Argo); security &amp; backup management.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Cloud Platform Expertise</h3>
-                    <p>AWS, Azure &amp; GCP architecture, migration &amp; optimization; monitoring, alerting &amp; cost governance; Elastic + cloud‑native observability via CloudWatch, Azure Monitor, etc.</p>
-                </div>
-                <div class="service-card">
-                    <h3>LLMOps &amp; Platform Add‑ons</h3>
-                    <p>Monitoring and tracing AI pipelines; managing embedding stores; observability for RAG pipelines (latency, quality, fallbacks); platform engineering capabilities like standardized infra templates and GitOps.</p>
-                </div>
+            <div class="mt-5 rounded-xl border border-slate-700 bg-slate-800/70 p-4 text-xs text-slate-300">
+              <p class="font-medium text-slate-100">
+                “We turn noisy logs, metrics, traces & embeddings into resilient, observable AI systems.”
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Packages section -->
-    <section id="packages" class="section packages">
-        <div class="container">
-            <h2>Service Packages</h2>
-            <div class="grid four package-grid">
-                <div class="package-card">
-                    <h3>Core Observability</h3>
-                    <p class="price">$2.5k – $5k / month</p>
-                    <ul>
-                        <li>Elastic setup (Cloud, K8s or on‑prem)</li>
-                        <li>Observability dashboards &amp; alerting</li>
-                        <li>Index lifecycle &amp; storage tiering</li>
-                        <li>24×7 health monitoring</li>
-                    </ul>
-                </div>
-                <div class="package-card">
-                    <h3>Elastic + DevOps</h3>
-                    <p class="price">$5k – $10k / month</p>
-                    <ul>
-                        <li>Includes Core Observability</li>
-                        <li>Managed Kubernetes (EKS, AKS, GKE)</li>
-                        <li>Infrastructure as code &amp; CI/CD</li>
-                        <li>Security hardening &amp; backup mgmt</li>
-                    </ul>
-                </div>
-                <div class="package-card">
-                    <h3>GenAI &amp; Search</h3>
-                    <p class="price">$7.5k – $15k / month</p>
-                    <ul>
-                        <li>Vector search &amp; hybrid retrieval</li>
-                        <li>LLMOps observability &amp; RAG pipelines</li>
-                        <li>Prompt trace &amp; response quality tracking</li>
-                        <li>Elastic ML &amp; anomaly detection</li>
-                    </ul>
-                </div>
-                <div class="package-card">
-                    <h3>Enterprise SRE/Platform</h3>
-                    <p class="price">Starts at $15k / month</p>
-                    <ul>
-                        <li>Full Elastic &amp; multi‑cloud support</li>
-                        <li>SOC2‑ready logging &amp; audit trails</li>
-                        <li>Uptime SLAs &amp; business continuity</li>
-                        <li>Dedicated engineer &amp; quarterly audits</li>
-                    </ul>
-                </div>
+    <!-- Why Elasticverse / Trends -->
+    <section id="why" class="border-t border-slate-800/70 bg-slate-900/80">
+      <div class="mx-auto max-w-7xl px-4 py-12 lg:py-16">
+        <div class="grid gap-12 lg:grid-cols-[1.3fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-50">Why Elasticverse?</h2>
+            <p class="mt-3 text-sm text-slate-300 lg:text-base">
+              For AI‑driven companies and digital platforms struggling with observability, vector search and DevOps complexity, Elasticverse delivers a turnkey MSP that integrates Elastic, cloud and GenAI tooling — enabling faster recovery, deeper insights and scalable infrastructure.
+            </p>
+            <!-- Differentiators cards -->
+            <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="hf-card rounded-xl border border-slate-800 p-5 text-sm">
+                <p class="font-semibold text-sky-300">Elastic‑native & AI‑first</p>
+                <p class="mt-2 text-slate-300 text-xs">We provide full‑stack expertise in Elastic, vector search and GenAI pipelines — far beyond generic MSPs.</p>
+              </div>
+              <div class="hf-card rounded-xl border border-slate-800 p-5 text-sm">
+                <p class="font-semibold text-sky-300">SLA‑backed AI reliability</p>
+                <p class="mt-2 text-slate-300 text-xs">We define reliability at the AI layer — RAG latency, search relevance and uptime — not just CPU and disk.</p>
+              </div>
+              <div class="hf-card rounded-xl border border-slate-800 p-5 text-sm">
+                <p class="font-semibold text-sky-300">Platform engineering mindset</p>
+                <p class="mt-2 text-slate-300 text-xs">We build developer platforms with self‑service, GitOps and secure infrastructure baked in.</p>
+              </div>
             </div>
+          </div>
+          <!-- Trends / Insights -->
+          <div class="space-y-5">
+            <p class="text-xs font-bold uppercase tracking-[0.22em] text-slate-400">Trends we ride</p>
+            <div class="hf-card rounded-xl border border-slate-800 p-5 text-sm">
+              <p class="font-semibold text-slate-100">AI adoption → Explosive data growth</p>
+              <p class="mt-2 text-slate-300 text-xs">Every LLM, copilot and RAG system generates massive logs, metrics, traces and embeddings. We make them observable.</p>
+            </div>
+            <div class="hf-card rounded-xl border border-slate-800 p-5 text-sm">
+              <p class="font-semibold text-slate-100">Vector search + Elastic</p>
+              <p class="mt-2 text-slate-300 text-xs">Most teams want AI‑powered search but lack Elastic & retrieval expertise. Elasticverse bridges that gap.</p>
+            </div>
+            <div class="hf-card rounded-xl border border-slate-800 p-5 text-sm">
+              <p class="font-semibold text-slate-100">DevOps & infra talent shortage</p>
+              <p class="mt-2 text-slate-300 text-xs">Instead of building a large platform team, partner with an MSP that owns the stack end‑to‑end.</p>
+            </div>
+            <div class="hf-card rounded-xl border border-slate-800 p-5 text-sm">
+              <p class="font-semibold text-slate-100">Observability becomes non‑optional</p>
+              <p class="mt-2 text-slate-300 text-xs">Incidents cost millions; observability is now a board‑level topic. We deliver managed insights tied to your business.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- SLA table section -->
-    <section class="section slas">
-        <div class="container">
-            <h2>Service Level Agreements</h2>
-            <table class="sla-table">
-                <thead>
-                    <tr>
-                        <th>Service Area</th>
-                        <th>Bronze</th>
-                        <th>Silver</th>
-                        <th>Gold</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Incident Response</td>
-                        <td>8×5 / 24h</td>
-                        <td>16×5 / 4h</td>
-                        <td>24×7 / 1h</td>
-                    </tr>
-                    <tr>
-                        <td>Infrastructure Monitoring</td>
-                        <td>Basic alerts</td>
-                        <td>Full‑stack</td>
-                        <td>ML‑powered</td>
-                    </tr>
-                    <tr>
-                        <td>Updates &amp; Patching</td>
-                        <td>Monthly</td>
-                        <td>Bi‑weekly</td>
-                        <td>Weekly</td>
-                    </tr>
-                    <tr>
-                        <td>Dedicated Engineer</td>
-                        <td>No</td>
-                        <td>Shared</td>
-                        <td>Dedicated</td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- Services / Pillars -->
+    <section id="services" class="border-t border-slate-800/70 bg-slate-900">
+      <div class="mx-auto max-w-7xl px-4 py-12 lg:py-16">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-end">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-50">What Elasticverse runs for you</h2>
+            <p class="mt-2 max-w-2xl text-sm text-slate-300 lg:text-base">
+              From Elastic and observability to GenAI search and cloud‑native DevOps, Elasticverse is your one‑stop MSP for AI‑ready infrastructure.
+            </p>
+          </div>
         </div>
+        <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Elastic Managed Service -->
+          <div class="hf-card rounded-xl border border-slate-800 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-300">01 · Elastic Stack as a Service</p>
+            <p class="mt-2 font-semibold text-slate-100">End‑to‑end lifecycle for Elasticsearch, Kibana, Beats & Logstash.</p>
+            <ul class="mt-3 space-y-2 text-xs text-slate-300">
+              <li>• Logs, metrics, traces, APM & anomaly detection</li>
+              <li>• Index lifecycle management, snapshots & tiering</li>
+              <li>• Scaling, upgrades & cost optimization on any platform</li>
+            </ul>
+          </div>
+          <!-- Observability & APM -->
+          <div class="hf-card rounded-xl border border-slate-800 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-300">02 · Observability & APM</p>
+            <p class="mt-2 font-semibold text-slate-100">End‑to‑end visibility across apps, services & infrastructure.</p>
+            <ul class="mt-3 space-y-2 text-xs text-slate-300">
+              <li>• OpenTelemetry, Elastic APM & distributed tracing</li>
+              <li>• SLO/SLI setup & performance tuning</li>
+              <li>• Native integrations with AWS, Azure & GCP</li>
+            </ul>
+          </div>
+          <!-- GenAI & Vector Search -->
+          <div class="hf-card rounded-xl border border-slate-800 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-300">03 · GenAI & Vector Search</p>
+            <p class="mt-2 font-semibold text-slate-100">Elastic‑powered RAG, semantic search & AI observability.</p>
+            <ul class="mt-3 space-y-2 text-xs text-slate-300">
+              <li>• Vector indices, ANN & hybrid retrieval</li>
+              <li>• RAG pipelines for copilots & assistants</li>
+              <li>• Observability for embeddings, latency & fallbacks</li>
+            </ul>
+          </div>
+          <!-- Infrastructure & DevOps -->
+          <div class="hf-card rounded-xl border border-slate-800 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-300">04 · Infrastructure & DevOps</p>
+            <p class="mt-2 font-semibold text-slate-100">Cloud‑native platform engineering, managed for you.</p>
+            <ul class="mt-3 space-y-2 text-xs text-slate-300">
+              <li>• IaC with Terraform, Helm & Ansible</li>
+              <li>• Managed K8s (EKS, AKS, GKE) & CI/CD (GitHub, GitLab, Argo)</li>
+              <li>• Security, RBAC, backups & multi‑env workflows</li>
+            </ul>
+          </div>
+          <!-- Cloud Platform Expertise -->
+          <div class="hf-card rounded-xl border border-slate-800 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-300">05 · Cloud Platform Expertise</p>
+            <p class="mt-2 font-semibold text-slate-100">AWS, Azure & GCP architecture, migration & optimization.</p>
+            <ul class="mt-3 space-y-2 text-xs text-slate-300">
+              <li>• Monitoring, alerting & cost governance</li>
+              <li>• Native integrations (CloudWatch, Azure Monitor, GCP Ops)</li>
+              <li>• Elastic + cloud‑native stack integrations</li>
+            </ul>
+          </div>
+          <!-- Future‑Ready -->
+          <div class="hf-card rounded-xl border border-slate-800 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-300">06 · LLMOps & Platform Engineering</p>
+            <p class="mt-2 font-semibold text-slate-100">Evolving into full LLMOps & internal developer platforms.</p>
+            <ul class="mt-3 space-y-2 text-xs text-slate-300">
+              <li>• Tracing AI pipelines & LLM inference</li>
+              <li>• Self‑service infra templates & GitOps workflows</li>
+              <li>• Cost‑aware, secure & compliant AI platforms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2>Stay Ahead in the AI Wave</h2>
-            <p>We recommend doubling down on GenAI observability &amp; search, leading with your Elastic‑native strength and pushing “AI‑ready infrastructure MSP” in your messaging. We offer add‑on services like seamless upgrades, data migration and custom dashboards to future‑proof your stack.</p>
-            <p>To discuss your requirements or request a custom proposal, reach out to our team today.</p>
-            <a href="mailto:elasticverse@gmail.com" class="btn primary">Contact Us</a>
+    <!-- Packages & Pricing -->
+    <section id="packages" class="border-t border-slate-800/70 bg-slate-900/90">
+      <div class="mx-auto max-w-7xl px-4 py-12 lg:py-16">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-50">Productized MSP packages</h2>
+            <p class="mt-2 max-w-2xl text-sm text-slate-300 lg:text-base">
+              Start with core observability or go all‑in on GenAI, Elastic and multi‑cloud platform engineering.
+            </p>
+          </div>
+          <p class="text-xs text-slate-400">
+            Pricing ranges are indicative. Final proposals are tailored to volume, regions & compliance needs.
+          </p>
         </div>
+        <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <!-- Core -->
+          <div class="hf-card flex flex-col rounded-2xl border border-slate-800 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Core</p>
+            <p class="mt-1 text-sm font-semibold text-slate-100">Core Observability‑as‑a‑Service</p>
+            <p class="mt-2 text-xs text-slate-300">For startups & mid‑size teams that need solid Elastic observability.</p>
+            <p class="mt-3 text-lg font-semibold text-sky-300">$2.5K–$5K<span class="text-xs text-slate-400"> / mo</span></p>
+            <ul class="mt-4 flex-1 space-y-2 text-xs text-slate-300">
+              <li>• Elastic stack setup (Cloud, K8s or on‑prem)</li>
+              <li>• Infra & app dashboards + SLOs</li>
+              <li>• Alerting & on‑call integrations</li>
+              <li>• Index lifecycle & storage tiering</li>
+              <li>• 24×7 health monitoring</li>
+            </ul>
+            <a href="#contact" class="mt-4 inline-block text-xs font-semibold text-sky-300 hover:text-sky-200">
+              Explore Core plan →
+            </a>
+          </div>
+          <!-- Elastic + DevOps -->
+          <div class="hf-card flex flex-col rounded-2xl border border-sky-500/70 p-6 shadow-lg shadow-sky-600/20 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-sky-300">Most Popular</p>
+            <p class="mt-1 text-sm font-semibold text-slate-100">Elastic + DevOps Managed Services</p>
+            <p class="mt-2 text-xs text-slate-300">For SaaS & product companies scaling aggressively.</p>
+            <p class="mt-3 text-lg font-semibold text-sky-300">$5K–$10K<span class="text-xs text-slate-400"> / mo</span></p>
+            <ul class="mt-4 flex-1 space-y-2 text-xs text-slate-300">
+              <li>• Everything in Core Observability</li>
+              <li>• Managed K8s (EKS, AKS, GKE)</li>
+              <li>• IaC with Terraform / Helm / Ansible</li>
+              <li>• CI/CD (GitHub, GitLab, Argo)</li>
+              <li>• Security hardening & backup management</li>
+            </ul>
+            <a href="#contact" class="mt-4 inline-block text-xs font-semibold text-sky-300 hover:text-sky-200">
+              Explore Elastic + DevOps plan →
+            </a>
+          </div>
+          <!-- GenAI MSP -->
+          <div class="hf-card flex flex-col rounded-2xl border border-violet-500/60 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-violet-300">GenAI‑native</p>
+            <p class="mt-1 text-sm font-semibold text-slate-100">GenAI Observability & Vector Search MSP</p>
+            <p class="mt-2 text-xs text-slate-300">For AI‑native companies, LLM platforms & RAG workloads.</p>
+            <p class="mt-3 text-lg font-semibold text-violet-300">$7.5K–$15K<span class="text-xs text-slate-400"> / mo</span></p>
+            <ul class="mt-4 flex-1 space-y-2 text-xs text-slate-300">
+              <li>• Vector search with Elastic (ANN + hybrid)</li>
+              <li>• LLMOps observability (latency, cost, fallbacks)</li>
+              <li>• Prompt tracing & response quality tracking</li>
+              <li>• Elastic ML & anomaly detection</li>
+              <li>• Integrations with LangChain, OpenAI, etc.</li>
+            </ul>
+            <a href="#contact" class="mt-4 inline-block text-xs font-semibold text-violet-300 hover:text-violet-200">
+              Explore GenAI plan →
+            </a>
+          </div>
+          <!-- Enterprise -->
+          <div class="hf-card flex flex-col rounded-2xl border border-amber-500/60 p-6 text-sm">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-amber-300">Enterprise</p>
+            <p class="mt-1 text-sm font-semibold text-slate-100">Enterprise SRE & Platform‑as‑a‑Service</p>
+            <p class="mt-2 text-xs text-slate-300">For large organisations with complex infra & strict SLAs.</p>
+            <p class="mt-3 text-lg font-semibold text-amber-300">From $15K<span class="text-xs text-slate-400"> / mo</span></p>
+            <ul class="mt-4 flex-1 space-y-2 text-xs text-slate-300">
+              <li>• Full Elastic + multi‑cloud + platform DevOps</li>
+              <li>• SOC2‑ready logging, RBAC & audit trails</li>
+              <li>• Aggressive uptime SLAs & business continuity</li>
+              <li>• Dedicated account engineer & monthly reports</li>
+              <li>• Quarterly cost optimization & infra audits</li>
+            </ul>
+            <a href="#contact" class="mt-4 inline-block text-xs font-semibold text-amber-300 hover:text-amber-200">
+              Talk about an Enterprise plan →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLA Section -->
+    <section id="sla" class="border-t border-slate-800/70 bg-slate-900">
+      <div class="mx-auto max-w-7xl px-4 py-12 lg:py-16">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-50">SLA‑backed reliability</h2>
+            <p class="mt-2 max-w-xl text-sm text-slate-300 lg:text-base">
+              SLAs cover more than infrastructure availability — we define reliability for RAG pipelines, search quality and developer experience.
+            </p>
+          </div>
+        </div>
+        <div class="mt-6 overflow-hidden rounded-2xl border border-slate-800 bg-slate-800/60">
+          <div class="grid grid-cols-4 bg-slate-900/80 text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
+            <div class="px-4 py-3 text-left">Service area</div>
+            <div class="px-4 py-3 text-center">Bronze</div>
+            <div class="px-4 py-3 text-center">Silver</div>
+            <div class="px-4 py-3 text-center">Gold</div>
+          </div>
+          <div class="divide-y divide-slate-800 text-xs text-slate-200">
+            <div class="grid grid-cols-4">
+              <div class="px-4 py-3 font-medium">Incident response</div>
+              <div class="px-4 py-3 text-center text-slate-300">8×5 / 24h</div>
+              <div class="px-4 py-3 text-center text-slate-300">16×5 / 4h</div>
+              <div class="px-4 py-3 text-center text-sky-300 font-semibold">24×7 / 1h</div>
+            </div>
+            <div class="grid grid-cols-4">
+              <div class="px-4 py-3 font-medium">Infra & app monitoring</div>
+              <div class="px-4 py-3 text-center text-slate-300">Baseline alerts</div>
+              <div class="px-4 py-3 text-center text-slate-300">Full‑stack coverage</div>
+              <div class="px-4 py-3 text-center text-sky-300 font-semibold">ML‑powered insights</div>
+            </div>
+            <div class="grid grid-cols-4">
+              <div class="px-4 py-3 font-medium">Updates & patching</div>
+              <div class="px-4 py-3 text-center text-slate-300">Monthly</div>
+              <div class="px-4 py-3 text-center text-slate-300">Bi‑weekly</div>
+              <div class="px-4 py-3 text-center text-sky-300 font-semibold">Weekly w/ canary rollouts</div>
+            </div>
+            <div class="grid grid-cols-4">
+              <div class="px-4 py-3 font-medium">Dedicated engineer</div>
+              <div class="px-4 py-3 text-center text-slate-300">Shared pool</div>
+              <div class="px-4 py-3 text-center text-slate-300">Named PoC</div>
+              <div class="px-4 py-3 text-center text-sky-300 font-semibold">Dedicated architect</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="border-t border-slate-800/70 bg-slate-900/95">
+      <div class="mx-auto max-w-7xl px-4 py-12 lg:py-16">
+        <div class="grid gap-12 lg:grid-cols-[1.2fr,1fr] lg:items-center">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-50">Ready to make your GenAI stack observable?</h2>
+            <p class="mt-2 max-w-xl text-sm text-slate-300 lg:text-base">
+              Share a bit about your stack — Elastic footprint, clouds, AI workloads. We’ll respond with a concrete plan, not a generic sales pitch.
+            </p>
+            <ul class="mt-6 space-y-2 text-xs text-slate-300">
+              <li>• Existing observability: Elastic / Datadog / Splunk / other</li>
+              <li>• AI footprint: LLMs, copilots, RAG systems, vector search</li>
+              <li>• Clouds & regions: AWS / Azure / GCP, single vs multi‑cloud</li>
+              <li>• Urgency: incident‑driven, cost optimization or new platform build</li>
+            </ul>
+            <div class="mt-6 text-sm text-slate-300">
+              Prefer email? <span class="font-semibold text-sky-300">contact@Elasticverse.dev</span>
+            </div>
+          </div>
+          <!-- Contact form (placeholder) -->
+          <form class="hf-card rounded-3xl border border-slate-800 p-6 space-y-4 text-sm" onsubmit="event.preventDefault();">
+            <div>
+              <label class="text-xs font-medium text-slate-300">Work email</label>
+              <input
+                type="email"
+                placeholder="you@company.com"
+                class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-800/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 outline-none focus:border-sky-400"
+              />
+            </div>
+            <div class="grid gap-4 lg:grid-cols-2">
+              <div>
+                <label class="text-xs font-medium text-slate-300">Company</label>
+                <input
+                  type="text"
+                  placeholder="Company name"
+                  class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-800/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 outline-none focus:border-sky-400"
+                />
+              </div>
+              <div>
+                <label class="text-xs font-medium text-slate-300">Role</label>
+                <input
+                  type="text"
+                  placeholder="Head of Platform, CTO..."
+                  class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-800/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 outline-none focus:border-sky-400"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="text-xs font-medium text-slate-300">What do you need help with?</label>
+              <textarea
+                rows="4"
+                placeholder="Elastic migration, RAG observability, cost optimization, multi‑cloud platform, etc."
+                class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-800/70 px-3 py-2 text-sm text-slate-100 placeholder-slate-500 outline-none focus:border-sky-400"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full rounded-full bg-sky-500 px-4 py-2.5 text-sm font-semibold text-slate-900 shadow-md shadow-sky-600/30 hover:bg-sky-400"
+            >
+              Request a 30‑minute discovery call
+            </button>
+            <p class="text-[11px] text-slate-500">
+              By submitting, you agree to be contacted about Elasticverse services. We respect your privacy.
+            </p>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="year"></span> Elasticverse. All rights reserved.</p>
+    <footer class="border-t border-slate-800 bg-slate-900">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-slate-500 lg:flex-row">
+        <div>© <span id="year"></span> Elasticverse. All rights reserved.</div>
+        <div class="flex gap-4">
+          <a href="#why" class="hover:text-sky-300">About</a>
+          <a href="#services" class="hover:text-sky-300">Services</a>
+          <a href="#contact" class="hover:text-sky-300">Contact</a>
         </div>
+      </div>
     </footer>
-
     <script>
-        // Set current year in footer
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('year').textContent = new Date().getFullYear();
-        });
+      // Set current year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
     </script>
-</body>
+  </body>
 </html>
