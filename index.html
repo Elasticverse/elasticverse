@@ -21,6 +21,12 @@
         background: rgba(23,37,84,0.85);
         backdrop-filter: blur(20px);
       }
+      .logo-container img {
+        max-width: 100%; /* Ensures the image is responsive */
+        height: auto;    /* Maintains the image's aspect ratio */
+        width: 120px;    /* Sets a specific width for the logo */
+        /* Add other positioning styles here, e.g., margin or float */
+      }
     </style>
   </head>
   <body class="bg-slate-900 text-slate-50 hf-gradient">
@@ -30,7 +36,13 @@
         <div class="flex items-center gap-3">
           <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-tr from-sky-500 to-violet-500 text-xl font-bold">
             Ev
+            <!-- <div class="logo-container">
+              <a href="index.html">
+                  <img src="Elasticverse-logo.png" alt="Website Logo - Home link">
+              </a>
+            </div> -->
           </div>
+          
           <div class="leading-tight">
             <div class="text-lg font-semibold">Elasticverse</div>
             <div class="text-xs text-slate-400">Observability & Search MSP</div>
@@ -394,7 +406,7 @@
               <li>• Urgency: incident‑driven, cost optimization or new platform build</li>
             </ul>
             <div class="mt-6 text-sm text-slate-300">
-              Prefer email? <span class="font-semibold text-sky-300">contact@Elasticverse.dev</span>
+              Prefer email? <span class="font-semibold text-sky-300">contact@elasticverse.co</span>
             </div>
           </div>
           <!-- Contact form (placeholder) -->
